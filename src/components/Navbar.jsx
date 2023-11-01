@@ -1,10 +1,22 @@
 import React from "react";
-import { AiOutlineLeft } from "react-icons/ai";
+import { AiOutlineLeft,AiOutlineRight } from "react-icons/ai";
 import { BsUpload } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({isSidebar,setIsSidebar}) => {
   return (
-    <header className="bg-white h-36 w-full shadow-sm">
+    <header  className={`bg-white h-46 w-full shadow-sm ${isSidebar ? '' : 'ml-0'}`}>
+    {isSidebar ? (
+        <AiOutlineLeft
+          onClick={() => setIsSidebar(false)}
+          className="relative right-3 top-2 bg-blue-50 rounded-full shadow-sm"
+        />
+      ) : (
+        <AiOutlineRight
+          onClick={() => setIsSidebar(true)}
+          className="relative left-1 top-2 bg-blue-50 rounded-full shadow-sm"
+        />
+      )}
+    
       <div className="flex items-center justify-start p-3">
         <div className="flex items-center">
           <AiOutlineLeft className="text-gray-500 text-lg" />
