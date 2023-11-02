@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { RiHome6Line } from "react-icons/ri";
 import { MdProductionQuantityLimits } from "react-icons/md";
-import { PiStudentLight, PiCheckSquareBold } from "react-icons/pi";
+import { PiStudentLight } from "react-icons/pi";
 import { FiTruck } from "react-icons/fi";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { MdOutlineEventAvailable } from "react-icons/md";
@@ -58,7 +58,7 @@ const Sidebar = () => {
   };
 
   return (
-    <section className="bg-white p-4 rounded shadow-md h-full max-w-[280px] hidden md:flex flex-col justify-between py-[60px] pl-[20px]">
+    <section className="bg-white p-4 rounded shadow-md h-full max-w-[280px] md:flex flex-col justify-between py-[60px] pl-[20px]">
       <h1 className="ml-2 text-yellow-500 font-bold text-3xl mb-4 ">
         Ultralight
       </h1>
