@@ -23,13 +23,11 @@ const Activity = () => {
       <div className="bg-white sm:m-6 md:m-6 lg:mt-10 p-4 rounded-lg shadow-md">
         <h1 className="text-md font-bold text-gray-800 mb-4">Activity</h1>
 
-        {/* Full-width text area */}
         <textarea
           className="w-full p-2 mb-4 rounded-md border"
           placeholder="Add a comment..."
         ></textarea>
 
-        {/* First comment */}
         <div className={`flex items-center`}>
           <div className="w-8 h-8 ">
             <AiOutlineMessage className="relative rounded-full bottom-10 ml-2 bg-blue-500 text-white" />
@@ -44,8 +42,6 @@ const Activity = () => {
             </p>
           </div>
         </div>
-
-        {/* Nested comments */}
         <div className="ml-16">
           <Comment
             name="Jane Cooper"
